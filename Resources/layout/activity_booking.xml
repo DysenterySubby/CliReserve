@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText,Suspicious0dp,ScrollViewSize" >
+
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:text="Approved!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/txtBookingDetails"
+        app:layout_constraintEnd_toEndOf="@+id/txtBookingDetails"
+        app:layout_constraintStart_toStartOf="@+id/txtBookingDetails"
+        />
+
+    <TextView
+        android:id="@+id/txtMyBooking"
+        android:text="My Booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBack"
+        app:layout_constraintEnd_toEndOf="@+id/txtBookingDetails"
+        app:layout_constraintStart_toStartOf="@+id/txtBookingDetails"
+        app:layout_constraintTop_toTopOf="@+id/btnBack"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/txtBookingDetails"
+        android:text="Booking Details"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:background="@drawable/bg_booking"
+        android:fallbackLineSpacing="true"
+        android:layout_marginTop="129dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="350dp" />
+
+    <TextView
+        android:id="@+id/txtStartTime"
+        android:text="Start Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toEndOf="@+id/txtBookingDetails"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtBookingDetails"
+        app:layout_constraintTop_toBottomOf="@+id/txtBookingDetails" />
+
+    <TextView
+        android:id="@+id/txtEndTime"
+        android:text="End Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtBookingDetails"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtBookingDetails"
+        app:layout_constraintTop_toBottomOf="@+id/txtBookingDetails" />
+
+    <TextView
+        android:id="@+id/tvStartTime"
+        android:text="2:00PM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toEndOf="@+id/txtStartTime"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtStartTime"
+        app:layout_constraintTop_toBottomOf="@+id/txtStartTime" />
+
+    <TextView
+        android:id="@+id/tvEndTime"
+        android:text="3:00PM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toEndOf="@+id/txtEndTime"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtEndTime"
+        app:layout_constraintTop_toBottomOf="@+id/txtEndTime" />
+
+    <TextView
+        android:id="@+id/txtSeatID"
+        android:text="Seat ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtStartTime"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtStartTime"
+        app:layout_constraintTop_toBottomOf="@+id/tvStartTime" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:text="Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtEndTime"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtEndTime"
+        app:layout_constraintTop_toBottomOf="@+id/tvEndTime" />
+
+    <TextView
+        android:id="@+id/tvSeatId"
+        android:text="R-HTA1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toEndOf="@+id/txtStartTime"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtStartTime"
+        app:layout_constraintTop_toBottomOf="@+id/txtSeatID" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:text="5/12/2024"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toEndOf="@+id/txtEndTime"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtEndTime"
+        app:layout_constraintTop_toBottomOf="@+id/txtDate" />
+
+    <TextView
+        android:id="@+id/txtBookingId"
+        android:text="Booking ID: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toStartOf="@+id/tvBookingId"
+        app:layout_constraintStart_toStartOf="@+id/imgQr"
+        app:layout_constraintTop_toBottomOf="@+id/imgQr" />
+
+    <TextView
+        android:id="@+id/tvBookingId"
+        android:text="2022153910-13-07-2024-07-34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBookingId"
+        app:layout_constraintEnd_toEndOf="@+id/imgQr"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtBookingId"
+        app:layout_constraintTop_toTopOf="@+id/txtBookingId" />
+
+    <ImageView
+        android:id="@+id/imgQr"
+        android:src="@drawable/qr_placeholder"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtBookingDetails"
+        app:layout_constraintStart_toStartOf="@+id/txtBookingDetails"
+        app:layout_constraintTop_toBottomOf="@+id/tvSeatId" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_back"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/btnCancelBooking"
+        android:text="Cancel Booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="32dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvBookingId"
+        app:layout_constraintStart_toStartOf="@+id/txtBookingId"
+        app:layout_constraintTop_toBottomOf="@+id/tvBookingId" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

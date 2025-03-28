@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="0dp"
+    tools:ignore="Suspicious0dp,UnresolvedResource,HardcodedText">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvName"
+            android:layout_toEndOf="@id/imgClir"
+
+            android:text="Einstein Bldg. 2nd Floor"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_constraintEnd_toEndOf="@+id/imgClir"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imgClir"
+            app:layout_constraintTop_toBottomOf="@+id/txtCLIRLocation" />
+
+        <TextView
+            android:id="@+id/txtCLIRLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imgClir"
+            android:layout_alignParentTop="true"
+            android:text="CLIR Location"
+            android:textSize="10sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/imgClir"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imgClir"
+            app:layout_constraintTop_toBottomOf="@+id/imgClir" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imgClir"
+            android:layout_alignParentTop="true"
+            android:text="Einstein"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvTxtCLIR"
+            app:layout_constraintStart_toEndOf="@+id/tvTxtCLIR"
+            app:layout_constraintTop_toTopOf="@+id/tvTxtCLIR" />
+
+        <TextView
+            android:id="@+id/tvTxtCLIR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imgClir"
+            android:layout_alignParentTop="true"
+            android:text="CLIR "
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/imgClir"
+            app:layout_constraintEnd_toEndOf="@+id/imgClir"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imgClir" />
+
+        <ImageView
+            android:id="@+id/imgClir"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_placeholder"
+            android:contentDescription="@string/placeholder_description"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="34dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/txtOpens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imgClir"
+            android:layout_alignParentTop="true"
+            android:text="Opens"
+            android:textSize="10sp"
+            android:fontFamily="sans-serif-medium"
+
+            android:drawableStart="@drawable/ic_circle"
+            android:drawableTint="@color/colorAccent"
+            android:layout_marginTop="2dp"
+            android:drawablePadding="4dp"
+            app:layout_constraintStart_toStartOf="@+id/tvDescription"
+            app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+
+        <TextView
+            android:id="@+id/tvOpens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvName"
+            android:layout_toEndOf="@id/imgClir"
+            android:text="7:00AM"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintEnd_toEndOf="@+id/txtOpens"
+            app:layout_constraintStart_toStartOf="@+id/txtOpens"
+            app:layout_constraintTop_toBottomOf="@+id/txtOpens" />
+
+        <TextView
+            android:id="@+id/txtCloses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imgClir"
+            android:layout_alignParentTop="true"
+            android:text="Closes"
+            android:textSize="10sp"
+            android:fontFamily="sans-serif-medium"
+
+            android:drawableStart="@drawable/ic_circle"
+            android:drawableTint="@color/colorPrimary"
+            android:drawablePadding="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/txtOpens"
+            app:layout_constraintStart_toStartOf="@+id/txtOpens"
+            app:layout_constraintTop_toBottomOf="@+id/tvOpens" />
+
+        <TextView
+            android:id="@+id/tvCloses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvName"
+            android:layout_toEndOf="@id/imgClir"
+            android:text="5:00PM"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintEnd_toEndOf="@+id/txtCloses"
+            app:layout_constraintStart_toStartOf="@+id/txtCloses"
+            app:layout_constraintTop_toBottomOf="@+id/txtCloses" />
+
+        <Button
+            android:id="@+id/btnVisit"
+            android:text="Visit"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imgClir"
+            app:layout_constraintStart_toStartOf="@+id/imgClir"
+            app:layout_constraintTop_toBottomOf="@+id/tvCloses" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

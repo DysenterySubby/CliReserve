@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout1"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgSeatType"
+            android:src="@drawable/img_placeholder"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSeatType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imgLogo"
+            android:layout_alignParentTop="true"
+            android:text="Trapezoid Folding Table"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="12dp"
+            app:layout_constraintStart_toEndOf="@+id/imgSeatType"
+            app:layout_constraintTop_toBottomOf="@+id/txtClir" />
+
+        <TextView
+            android:id="@+id/tvSeatTypeId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imgLogo"
+            android:layout_alignParentTop="true"
+            android:text="(R-TFT)"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textStyle="bold"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvSeatType"
+            app:layout_constraintStart_toEndOf="@+id/tvSeatType"
+            app:layout_constraintTop_toTopOf="@+id/tvSeatType"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnCheck"
+            android:text="check"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgSeatType"
+            app:layout_constraintEnd_toEndOf="@+id/tvSeatTypeId"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/tvSeatType"
+            app:layout_constraintTop_toTopOf="@+id/imgSeatType"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tvSeatCount"
+            android:text="3 seats available"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="8sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/btnCheck"
+            app:layout_constraintStart_toStartOf="@+id/btnCheck"
+            app:layout_constraintTop_toBottomOf="@+id/tvSeatType" />
+
+        <TextView
+            android:id="@+id/txtClir"
+            android:text="CLIR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="@+id/tvSeatType"
+            app:layout_constraintTop_toTopOf="@+id/imgSeatType" />
+
+        <TextView
+            android:id="@+id/tvClir"
+            android:text="Rizal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtClir"
+            app:layout_constraintStart_toEndOf="@+id/txtClir"
+            app:layout_constraintTop_toTopOf="@+id/txtClir" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

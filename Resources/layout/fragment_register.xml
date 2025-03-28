@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText,LabelFor,TouchTargetSizeCheck,TextContrastCheck,Suspicious0dp">
+
+    <TextView
+        android:id="@+id/tbTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="600dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Create An Account"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="sans-serif"
+        android:text="User Information"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/tbTitle"
+        app:layout_constraintStart_toStartOf="@+id/tbTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tbTitle"
+        app:layout_constraintWidth_max="400dp" />
+
+    <EditText
+        android:id="@+id/txtFname"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:autofillHints="name"
+        android:background="@drawable/bg_text_view"
+        android:hint="John"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvFname"
+        app:layout_constraintStart_toStartOf="@+id/tvFname"
+        app:layout_constraintTop_toBottomOf="@+id/tvFname" />
+
+    <TextView
+        android:id="@+id/tvFname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="First Name"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline10"
+        app:layout_constraintStart_toStartOf="@+id/tvHeader"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeader" />
+
+    <EditText
+        android:id="@+id/txtLname"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:autofillHints="name"
+        android:background="@drawable/bg_text_view"
+        android:hint="Edwards"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvLname"
+        app:layout_constraintStart_toStartOf="@+id/tvLname"
+        app:layout_constraintTop_toBottomOf="@+id/tvLname" />
+
+    <TextView
+        android:id="@+id/tvLname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Last Name"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvHeader"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeader" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/tvStudNum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Student Number"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtLname"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toStartOf="@+id/tvFname"
+        app:layout_constraintTop_toBottomOf="@+id/txtFname" />
+
+    <EditText
+        android:id="@+id/txtStudNum"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_text_view"
+        android:drawableStart="@drawable/ic_account"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="10 digit number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:paddingStart="10dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvStudNum"
+        app:layout_constraintStart_toStartOf="@+id/tvStudNum"
+        app:layout_constraintTop_toBottomOf="@+id/tvStudNum" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Account Security"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/txtStudNum"
+        app:layout_constraintStart_toStartOf="@+id/txtStudNum"
+        app:layout_constraintTop_toBottomOf="@+id/txtStudNum" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Email"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <EditText
+        android:id="@+id/txtRegEmail"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_text_view"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="example@live.mcl.edu.ph"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Password"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtRegEmail"
+        app:layout_constraintStart_toStartOf="@+id/txtRegEmail"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegEmail" />
+
+    <EditText
+        android:id="@+id/txtRegPass"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_text_view"
+        android:drawableStart="@drawable/ic_password"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="12dp"
+        android:text="register"
+        app:layout_constraintEnd_toEndOf="@+id/txtRegPass"
+        app:layout_constraintStart_toStartOf="@+id/txtRegPass"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegPass" />
+</androidx.constraintlayout.widget.ConstraintLayout>

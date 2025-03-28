@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_activity_reservation"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="Suspicious0dp,HardcodedText">
+    
+    <TextView
+        android:id="@+id/tvNavHome"
+        android:text="Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:drawableStart="@drawable/ic_back"
+        android:textSize="16sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rvSeats"
+        app:layout_constraintStart_toStartOf="@+id/rvSeats"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+        app:layout_constraintVertical_bias="0.02">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/svSeatTypes"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:iconifiedByDefault="false"
+            app:queryBackground="@android:color/transparent"
+            app:queryHint="Search for your desired seat" />
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvNavHome">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="35dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/placeholder_description"
+            android:src="@drawable/logo"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvNavHome" />
+
+        <TextView
+            android:id="@+id/tvClir"
+            android:text="RIZAL"
+            android:layout_marginStart="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+
+    
+
+
+    <TextView
+        android:id="@+id/tvTxtCategories"
+        android:text="Categories"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="30sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/rvSeats"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rvSeats"
+        app:layout_constraintTop_toBottomOf="@+id/cardView1" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/cgSeatTypes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/rvSeats"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rvSeats"
+        app:layout_constraintTop_toBottomOf="@+id/tvTxtCategories"
+        app:singleLine="false">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip1"
+            style="@style/chips"
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Table"
+            app:chipIcon="@drawable/ic_table"
+            app:iconStartPadding="4dp"
+            app:chipIconVisible="true"
+            app:checkedIconVisible="false"
+            app:chipBackgroundColor="@color/bg_chip"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip2"
+            style="@style/chips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sofa"
+            app:chipIcon="@drawable/ic_sofa"
+            app:iconStartPadding="4dp"
+            app:chipIconVisible="true"
+            app:checkedIconVisible="false"
+            app:chipBackgroundColor="@color/bg_chip"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip3"
+            style="@style/chips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chair"
+            app:chipIcon="@drawable/ic_chair"
+            app:chipIconTint="@android:color/white"
+            app:iconStartPadding="4dp"
+            app:chipIconVisible="true"
+            app:checkedIconVisible="false"
+            app:chipBackgroundColor="@color/bg_chip"
+            tools:ignore="UnresolvedResource" />
+
+
+    </com.google.android.material.chip.ChipGroup>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSeats"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cgSeatTypes">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bg_fcPop"
+        tools:ignore="MissingDimension" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fcPop"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:background="@drawable/bg_fragment_popup"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButtonToggleGroup1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
