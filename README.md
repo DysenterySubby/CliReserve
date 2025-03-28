@@ -1,2 +1,2 @@
 # CliReserve
-A library seat reservation mobile app for MMCL (Mapúa Malayan Colleges Laguna) developed in C# Xamarin utilizing RESTful architecture. The app was developed as a final project requirement for the course IT123P (INTEGRATIVE PROGRAMMING AND TECHNOLOGIES).
+A library seat reservation mobile app for MMCL (Mapúa Malayan Colleges Laguna) developed in C# Xamarin utilizing RESTful architecture. The app was developed as a final project requirement for the course IT123P (INTEGRATIVE PROGRAMMING AND TECHNOLOGIES). Due to relience on multiple Azure Cloud Computing Services, the website became non-functional after the expiration of the Student Trial Azure Subscription.
